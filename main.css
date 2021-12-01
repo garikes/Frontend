@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: "Trebuchet MS", Helvetica;
+}
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float:left;
+    position: fixed;
+}
+
+header #logo{
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span{
+    font-size:1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One',serif;
+
+}
+
+@media (min-width: 701px){
+    #logo {
+        float:left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #about{
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px){
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #about{
+        float: left;
+        width: 100%;
+    }
+}
+
+#about{
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+#about > a {color: #fff}
+#about > a:hover{
+    color:#b0b0b0 ;
+    text-decoration: underline;
+}
+
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+.field{
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color:#343434;
+
+}
+
+.field #about a {color: #343434}
+.field #about a:hover{color: #7c7c7c}
+
+#top {
+    width: 100%;
+    background-image: url("https://www.free-mockup.com/wp-content/uploads/edd/2019/09/Free-MacBook-Air-on-a-Table-Mock-Up.jpg");
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+@media (min-width: 1001px){
+    #top{
+        font-size:3em;
+            height: 1000px;
+
+
+    }
+}
+@media (max-width: 1000px) and (min-width: 651px){
+    #top{
+        font-size:2em;
+            height: 600px;
+
+
+    }
+}
+@media (max-width: 650px) {
+    #top{
+        font-size:1.3em;
+        padding-top: 50%;
+            height: 500px;
+
+
+    }
+}
+
+
+#top h1 {
+    padding-top:20%;
+}
+#top h3 {
+    color:#ccc;
+}
+#main {
+    padding: 100px 20%;
+    width:60% ;
+    float:left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+}
+
+@media (min-width: 1401px){
+    #main{
+        padding: 100px 20%;
+    width:60% ;
+    }
+}
+@media (max-width: 1400px){
+    #main{
+        padding: 100px 10%;
+        width:80% ;
+    }
+}
+@media (max-width: 700px){
+    #main div{
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+#main h2 {font-size: 3em}
+#main span {color:#a0a0a0 }
+
+#overview{
+    float: left ;
+    background-image: url("data:image/jpeg;base64,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");
+
+    background-blend-mode: multiply;
+    background-color: #4f1c75;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+}
+#overview h2 {font-size: 4em}
+#overview span {color:#ccc; font-size: 1.5em}
+
+#overview .img{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#overview .img:nth-child(odd){
+    margin-left: 18%;
+}
+
+#overview img{
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width:100% ;
+    max-width: 500px;
+}
+#overview span{
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    #overview .img{
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+
+}
